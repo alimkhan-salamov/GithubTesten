@@ -15,11 +15,14 @@ using System.Windows.Shapes;
 
 namespace Github
 {
+
+   
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        int count = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +31,12 @@ namespace Github
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             lblResult.Content = "Hello World";
+        }
+
+        private void btnIncrement_Click(object sender, RoutedEventArgs e)
+        {
+            count++;
+            lblResultIncrement.Content = count.ToString();
         }
     }
 }
