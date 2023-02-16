@@ -32,11 +32,5 @@ namespace Github
         {
             lblResult.Content = "Hello World";
         }
-
-        private void btnIncrement_Click(object sender, RoutedEventArgs e)
-        {
-            count++;
-            lblResultIncrement.Content = count.ToString();
-        }
     }
 }
